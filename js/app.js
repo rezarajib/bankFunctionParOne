@@ -18,6 +18,21 @@ document.getElementById('depositBtn').addEventListener('click',function(){
     //  emtry numnber deposti field
 
     inputDepositNumber.value = '';
+
+
+    //  style balance section 
+
+
+   const currentBalanceElement = document.getElementById('currentBalanceElement');
+   const currentBalEleInnerText = currentBalanceElement.innerText;
+   const currentBalEleStrToNum = parseFloat(currentBalEleInnerText);
+   
+  const balanceTotal = currentBalEleStrToNum + inputDepoValueStrToNum;
+
+  currentBalanceElement.innerText = balanceTotal;
+
+  
+
    
     
     
