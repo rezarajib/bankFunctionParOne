@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-4xl font-bold text-center mb-8">Let's get some <span class="text-purple-500">Moooooooney</span>!!!</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="bg-green-400 text-white p-6 rounded-lg shadow-lg text-center">
+                <h2 class="text-xl">Deposit</h2>
+                <p class="text-5xl mt-2">$ <span id="depositTotal">00</span></p>
+            </div>
+            <div class="bg-yellow-400 text-white p-6 rounded-lg shadow-lg text-center">
+                <h2 class="text-xl">Withdraw</h2>
+                <p class="text-2xl mt-2">$ <span id="current-withdraw">00</span></p>
+            </div>
+            <div class="bg-purple-400 text-white p-6 rounded-lg shadow-lg text-center">
+                <h2 class="text-xl">Balance</h2>
+                <p class="text-2xl mt-2">$<span id="currentBalanceElement">1240</span></p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-pink-400 p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl text-white mb-4">Please Deposit</h2>
+                <input id="depositField" type="number" placeholder="$ Amount you want to deposit" class="w-full p-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                <button id="depositBtn" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50  text-center">
+                    Deposit
+                </button>
+            </div>
+            <div class="bg-blue-400 p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl text-white mb-4">Please Withdraw</h2>
+                <input id="withdraw-field" type="number" placeholder="$ Amount you want to withdraw" class="w-full p-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <button id="btn-withdraw" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 text-center">
+                        Withdraw
+                    </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
